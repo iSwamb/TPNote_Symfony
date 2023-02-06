@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FrontofficeController!{% endblock %}
+
+{% block body %}
+    <style>
+        .example-wrapper {
+            margin: 1em auto;
+            max-width: 800px;
+            width: 95%;
+            font: 18px/1.5 sans-serif;
+        }
+
+        .example-wrapper code {
+            background: #F5F5F5;
+            padding: 2px 6px;
+        }
+    </style>
+
+    <div class="example-wrapper">
+        <div class="container">
+            <div class="row">
+                {{ form_start(form) }}
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>Nom de la catégorie :</th>
+                        <td>{{ form_widget(form.user_name) }}</td>
+                    </tr>
+                    <tr>
+                        <th>Image de la catégorie :</th>
+                        <td>{{ form_widget(form.user_email) }}</td>
+                    </tr>
+                    <tr>
+                        <th>Image de la catégorie :</th>
+                        <td>{{ form_widget(form.user_motivation) }}</td>
+                    </tr>
+                    <tr>
+                        <th>Image de la catégorie :</th>
+                        <td>{{ form_widget(form.offer_id) }}</td>
+                    </tr>
+                    <tr>
+                        <th>Image de la catégorie :</th>
+                        <td>{{ form_widget(form.status) }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
